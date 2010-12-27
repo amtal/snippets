@@ -23,6 +23,8 @@ This approach is machine-controlled, but allows some of the same introspection a
 
 The approach has quite a few flaws, and is far from the pure AI ideals. However, it seems to have an excellent place in practical applications which are a bitch to model accurately but easy to eyeball.
 
+A commonly mentioned example is air conditioners. Almost pointless to model due to all the external factors, but straightforward to get good results with via custom rules of thumb.
+
 
     Key.hs
 

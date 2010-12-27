@@ -1,0 +1,30 @@
+    Logic.hs
+
+And/or/not show up in a lot more places than boolean logic. One very cool variant is ternary logic, which allows extremely precise reasoning in partial knowledge situations - while using the exact same rules as boolean logic! (See the isFire function for an example.)
+
+Probabilities fall under the same umbrella, dealing with uncertain knowledge rather than partial knowledge.
+
+
+    Fuzz.hs
+
+Here's an idea I like. Control systems involve a function that takes the measured outputs of a system, and calculate appropriate inputs that should be applied. Ideally this is done with a mathematical model based on physical/chemical understanding of the system in question.
+
+What often happens if a system is too complex or poorly understood to be modeled, however, is a human is put into the loop. (Machine learning is a high tech thing, it's hard to trust it with industrial stuff.)
+
+Through their knowledge and observations, the human develops some rules of thumb for operating the system. "If this dial is in the red, reduce input here. If this dial is in the red, push that button. If throughput is low, throw that lever..." These are very much "seat of the pants" type decisions, but can be analysed and described to people.
+
+They provide a sense of security that machine learning doesn't. The human operator might not know exactly what's going on, but he can make educated guesses and is unlikely to do something really dumb. This is more than can be said about, say, neural networks.
+
+
+Fuzzy logic is a way to describe a control system in terms of some human-readable, "trustworthy", rules of thumb. These rules are points, which the fuzzy logic system interpolates into a smooth surfaced control function mapping system ouputs to required system inputs.
+
+This approach is machine-controlled, but allows some of the same introspection as a human operator. What's more, and what's really interesting, is that the rule set could hypothetically be determined through machine learning! (Or at least tuned: the thing about rules of thumb is they require trial and error to get right.)
+
+
+The approach has quite a few flaws, and is far from the pure AI ideals. However, it seems to have an excellent place in practical applications which are a bitch to model accurately but easy to eyeball.
+
+
+    Key.hs
+
+An example of high level implementations identifying structure invisible in low level ones. See comments and link in header.
+
